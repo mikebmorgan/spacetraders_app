@@ -1,0 +1,37 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  width: full;
+  height: 2rem;
+  margin: 2rem;
+}
+
+#left-elements {
+  display: flex;
+  align-items: center;
+}
+
+#credits-zone {
+  background-color: #007a7a;
+  font-size: 3rem;
+  color: #fff;
+  padding: 0.75rem;
+
+}
+
+#agent-info {
+  display: block;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+#right-elements {
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+  gap: 1rem;
+}

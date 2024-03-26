@@ -1,3 +1,17 @@
-<template id="header">
-  <link rel="stylesheet" href="header.css">
+<template id="space-traders-header">
+  <link rel="stylesheet" href="/components/shared/header/header.css">
+
+  <div id="header">
+    <div id="left-elements">
+      <div id="credits-zone"><slot name="credits">0</slot></div>
+      <div id="agent-info">
+        <div id="agent-callsign"><slot name="agent-callsign">Son Halo</slot></div>
+        <div id="agent-faction"><slot name="agent-faction">SMUGGLERS</slot></div>
+      </div>
+    </div>
+    <div id="right-elements">
+      <div id="ship-count"><slot name="ship-count">num_ships</slot></div>
+      <div id="agent-headquarters"><slot name="agent-headquarters">XX-XXXX-XX</slot></div>
+    </div>
+  </div>
 </template>

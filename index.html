@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SpaceTraders App</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
     <script type="module">
       // Import Components
-      import Header from './components/shared/header/header.js'
+      import SpaceTradersHeader from './components/shared/header/header.js'
 
       // Register Components
-      if (!customElements.get('header')) {
-        customElements.define('header', Header)
+      if (!customElements.get('space-traders-header')) {
+        customElements.define('space-traders-header', SpaceTradersHeader)
       }
     </script>
   </head>
   <body>
-    <header></header>
+    <space-traders-header></space-traders-header>
   </body>
 </html>
