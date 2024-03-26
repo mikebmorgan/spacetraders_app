@@ -23,7 +23,7 @@ class SpaceTradersHeader extends HTMLElement {
 
   // Lists all attributes which are paid attention
   static get observedAttributes() {
-    return ['symbol', 'credits', 'faction', 'headquarters', 'shipcount'];
+    return ['symbol', 'credits', 'startingfaction', 'headquarters', 'shipcount'];
   }
 
   attributeChangedCallback(property, oldValue, newValue) {
@@ -36,7 +36,7 @@ class SpaceTradersHeader extends HTMLElement {
     // toTitleCase method from shared.js
     if (this.symbol) this.agentCallsignEl.textContent = this.symbol;
     if (this.credits) this.creditsEl.textContent = abbreviateNumber(parseInt(this.credits));
-    if (this.faction) this.factionEl.textContent = this.faction;
+    if (this.startingfaction) this.factionEl.textContent = this.startingfaction;
     if (this.headquarters) this.headquartersEl.textContent = this.headquarters;
     if (this.shipcount) this.shipCountEl.textContent = this.shipcount;
 
